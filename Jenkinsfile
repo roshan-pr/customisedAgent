@@ -13,7 +13,7 @@ pipeline {
                 dockerfile {
                     filename             'Dockerfile.cpplint'
                     dir                  'scripts'
-                    label                'cppLintImage'
+                    args                 '-v /tmp:/tmp'
                 }
             }
             steps {
